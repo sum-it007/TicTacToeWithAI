@@ -52,8 +52,9 @@ public:
                 isValid= false;
                 continue;
             }
+            position = position -1;
             row = position/BOARD_SIZE;
-            col = position%BOARD_SIZE-1;
+            col = position%BOARD_SIZE;
             if (board[row][col] == 'X' || board[row][col] == 'O') {
                 cout << "\nSpot Already taken .. ";
             } else{
